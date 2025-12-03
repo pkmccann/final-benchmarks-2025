@@ -18,4 +18,4 @@
 (let ((call1 (nested-ifs 1 2 3)))
   (let ((call2 (nested-ifs 1 1 2)))
     (let ((call3 (nested-ifs 2 1 1)))
-      (print (+ call1 call2 call3)))))
+      (print (+ call1 (+ call2 call3))))))
