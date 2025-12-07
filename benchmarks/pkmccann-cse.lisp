@@ -1,6 +1,6 @@
 (define (max lst) 
-    (if (= (right lst) ())
-        (right lst)
+    (if (empty? (right lst))
+        (left lst)
         (if (< (max (right lst)) (left lst))
             (left lst)
             (max (right lst))
